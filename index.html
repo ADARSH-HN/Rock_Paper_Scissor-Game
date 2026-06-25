@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock_Paper_Scissor-Game</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section class="bg-blue-400 top-0 left-0 h-full min-h-screen flex flex-col items-center text-white pb-20">
+    <h1 class="text-center text-5xl font-bold mb-5 mt-10 mx-5">ROCK PAPER SCISSOR</h1>
+    <div class="flex flex-col border-2 mx-5 rounded-xl px-3 py-2 min-mx-5 bg-white border-blue-900 text-black  rules_btn transistion-all duration-500 ease-in-out">
+        <p class="text-center text-lg font-semibold">Rules Of The Game  <i class="fa-solid fa-angle-right arrow transistion-all duration-300 ease-in-out"></i></p>
+        <div class="max-h-0 overflow-hidden rules transistion-all duration-500 ease-in-out ">
+            <p class="font-semibold">How to Play<p>
+            <p>• The game has 3 rounds.</p>
+            <p>• Choose Rock, Paper, or Scissors each round.</p>
+            <p>• The computer will choose at the same time.</p>
+            <p class="font-semibold">Winning Rules:</p>
+            <p>Rock beats &gt; Scissors</p>
+            <p>Scissors beats &gt; Paper</p>
+            <p>Paper beats &gt;  Rock</p>
+            <p>• Winning a round gives you 1 point.</p>
+            <p>• After 3 rounds, the player with the highest score wins.</p>
+            <p>• If both scores are equal, the game ends in a draw.</p>
+            <p class="text-center font-semibold">Good luck! </p> 
+        </div>
+    </div>
+    <div class="mx-auto my-10">
+        <h2 class="text-2xl mb-5 text-center font-semibold title">Start Playing Now !!</h2>
+        <button class="btn" disabled value="rock" ><i class="fa-solid fa-hand-back-fist"></i></button>
+        <button class="btn" disabled value="scissor"><i class="fa-solid fa-hand-peace"></i></button>
+        <button class="btn" disabled value="paper"><i class="fa-solid fa-hand"></i></button>
+    </div>
+    <div>
+        <button class="text-2xl bg-blue-900 start_game rounded-xl px-4 py-2 font-semibold border-2 border-white shadow-xl/30 transition-all duration-150 ease-in-out active:scale-95 active:shadow-none">START GAME</button>
+    </div>
+    <section class="flex flex-col justify-center items-start w-full md:items-center px-5 mx-5 text-xl text-start md:text-center mb-10 font-semibold hidden scoreboard">
+        <div class="mb-5 round_winner">
+            <p class="user_choice">Your choice : </p>
+            <p class="computer_choice">Computer choice : </p>
+            <p class="who_won_round mt-5">Round Winner is ....</p>
+        </div>
+        <div>
+            <p class="text-2xl font-bold my-2 text-black w-full">Result</p>
+            <p>Round <span class="round_counter">0</span>/3</p>
+            <p>Player score : <span class="playerscore">0</span></p>
+            <p>Computer score : <span class="computerscore">0</span></p>
+        </div>
+            <p class="final_score text-center"></p>
+    </section>
+    <div>
+        <button class="text-2xl bg-blue-900 reset_game rounded-xl px-4 py-2 font-semibold border-2 border-white shadow-xl/30 transition-all duration-150 ease-in-out active:scale-95 active:shadow-none hidden">RESET GAME</button>
+    </div>
+
+    </section>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>
